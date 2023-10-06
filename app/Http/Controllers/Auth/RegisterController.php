@@ -22,6 +22,7 @@ class RegisterController extends Controller
     |
     */
 
+    //trait funciona como uma espécie de copia e cola, ele pega uma variável e incorpora onde está sendo chamado, tras para o contexto, é como se estivessimos fazendo um require
     use RegistersUsers;
 
     /**
