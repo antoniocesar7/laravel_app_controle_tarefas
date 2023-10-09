@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class TarefaController extends Controller
 {
+    //OPÇÃO 1 DE MIDDLEWARE COM CONSTRUTOR, SEGUNDA OPÇÃO É NAS ROTAS (web.php)
+   public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -15,6 +21,7 @@ class TarefaController extends Controller
     public function index()
     {
         //
+        echo 'Chegamos até aqui!';
     }
 
     /**
